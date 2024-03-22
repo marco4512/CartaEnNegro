@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="Style/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Querida Sara</strong>
+                        <p>
+                            Te reconocería incluso en la más absoluta oscuridad, aunque tú fueras sorda y yo mudo.
+                        </p>
+                        <p>
+                            Te reconocería en otra vida
+                        </p>
+                        <p>
+                            en distintos cuerpos, en tiempos diferentes
+                        </p>
+                        <p>
+                            ,y te amaría en cada uno de ellos hasta que la última estrella en el cielo se desvanezca en el olvido.
+                            <img  class="Imagen_Flor" src="img/yellow-flower-103572.png">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
